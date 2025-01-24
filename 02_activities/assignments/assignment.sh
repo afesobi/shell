@@ -11,6 +11,7 @@ set -x
 
 mkdir analysis output
 touch README.md
+echo "# Project Name: DSI Consulting Inc." > README.md
 touch analysis/main.py
 
 # download client data
@@ -58,6 +59,7 @@ cp ./data/raw/*user*.log ./data/processed/user_logs/
 
 rm -f ./data/raw/*ipaddr*
 rm -f ./data/processed/user_logs/*ipaddr*
+rf -rf ./data
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 
